@@ -1,0 +1,91 @@
+# Project: Progetto_LASD
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o inseriscimailepassword.o inserisci.o nuovonodo.o leggifile.o print.o creasaldo.o svuotasaldo.o scrivifile.o confrontadati.o ricavosaldo.o caricacarrello.o ricercanodo.o acquistocarrello.o svuotalista.o contasaldo.o aggiornasaldo.o scrivifiledattesa.o giocaconlalista.o scrivifilenegozio.o aggiornalista.o aggiornautente.o
+LINKOBJ  = main.o inseriscimailepassword.o inserisci.o nuovonodo.o leggifile.o print.o creasaldo.o svuotasaldo.o scrivifile.o confrontadati.o ricavosaldo.o caricacarrello.o ricercanodo.o acquistocarrello.o svuotalista.o contasaldo.o aggiornasaldo.o scrivifiledattesa.o giocaconlalista.o scrivifilenegozio.o aggiornalista.o aggiornautente.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Progetto_LASD.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+inseriscimailepassword.o: inseriscimailepassword.c
+	$(CC) -c inseriscimailepassword.c -o inseriscimailepassword.o $(CFLAGS)
+
+inserisci.o: inserisci.c
+	$(CC) -c inserisci.c -o inserisci.o $(CFLAGS)
+
+nuovonodo.o: nuovonodo.c
+	$(CC) -c nuovonodo.c -o nuovonodo.o $(CFLAGS)
+
+leggifile.o: leggifile.c
+	$(CC) -c leggifile.c -o leggifile.o $(CFLAGS)
+
+print.o: print.c
+	$(CC) -c print.c -o print.o $(CFLAGS)
+
+creasaldo.o: creasaldo.c
+	$(CC) -c creasaldo.c -o creasaldo.o $(CFLAGS)
+
+svuotasaldo.o: svuotasaldo.c
+	$(CC) -c svuotasaldo.c -o svuotasaldo.o $(CFLAGS)
+
+scrivifile.o: scrivifile.c
+	$(CC) -c scrivifile.c -o scrivifile.o $(CFLAGS)
+
+confrontadati.o: confrontadati.c
+	$(CC) -c confrontadati.c -o confrontadati.o $(CFLAGS)
+
+ricavosaldo.o: ricavosaldo.c
+	$(CC) -c ricavosaldo.c -o ricavosaldo.o $(CFLAGS)
+
+caricacarrello.o: caricacarrello.c
+	$(CC) -c caricacarrello.c -o caricacarrello.o $(CFLAGS)
+
+ricercanodo.o: ricercanodo.c
+	$(CC) -c ricercanodo.c -o ricercanodo.o $(CFLAGS)
+
+acquistocarrello.o: acquistocarrello.c
+	$(CC) -c acquistocarrello.c -o acquistocarrello.o $(CFLAGS)
+
+svuotalista.o: svuotalista.c
+	$(CC) -c svuotalista.c -o svuotalista.o $(CFLAGS)
+
+contasaldo.o: contasaldo.c
+	$(CC) -c contasaldo.c -o contasaldo.o $(CFLAGS)
+
+aggiornasaldo.o: aggiornasaldo.c
+	$(CC) -c aggiornasaldo.c -o aggiornasaldo.o $(CFLAGS)
+
+scrivifiledattesa.o: scrivifiledattesa.c
+	$(CC) -c scrivifiledattesa.c -o scrivifiledattesa.o $(CFLAGS)
+
+giocaconlalista.o: giocaconlalista.c
+	$(CC) -c giocaconlalista.c -o giocaconlalista.o $(CFLAGS)
+
+scrivifilenegozio.o: scrivifilenegozio.c
+	$(CC) -c scrivifilenegozio.c -o scrivifilenegozio.o $(CFLAGS)
+
+aggiornalista.o: aggiornalista.c
+	$(CC) -c aggiornalista.c -o aggiornalista.o $(CFLAGS)
+
+aggiornautente.o: aggiornautente.c
+	$(CC) -c aggiornautente.c -o aggiornautente.o $(CFLAGS)
